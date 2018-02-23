@@ -29,7 +29,7 @@ void join_all(vector<std::thread>& v)
     std::for_each(v.begin(),v.end(),do_join);
 }
 
-void  main(int argc, char **argv) {
+int main(int argc, char **argv) {
 	srand ( time(NULL) );
 
 	vector<thread>computation;
